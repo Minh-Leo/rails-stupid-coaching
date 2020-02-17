@@ -1,0 +1,15 @@
+<div class="container">
+
+  <h1>Home#ask</h1>
+  <p>Find me in app/views/home/ask.html.erb</p>
+
+
+  <form action="/answer" method="POST">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <p>Ask your coach anything</p>
+    <label for="question">Type the question:</label>
+    <input type="text" name="question" id="question">
+    <button type="submit">Ask</button>
+  </form>
+
+</div>
